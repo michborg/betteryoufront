@@ -1,0 +1,841 @@
+{
+  "settings": {
+    "name": "Site-11-09_1914",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#96bf0d",
+        "secondaryColor": "#ff3366",
+        "successColor": "#366c4c",
+        "infoColor": "#82786E",
+        "warningColor": "#f9f295",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Poppins",
+        "display1Size": 4.25,
+        "display2Font": "Poppins",
+        "display2Size": 3,
+        "display5Font": "Poppins",
+        "display5Size": 1.5,
+        "display7Font": "Poppins",
+        "display7Size": 1,
+        "display4Font": "Poppins",
+        "display4Size": 1,
+        "isRoundedButtons": false,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#f8f8f8",
+        "#fdfcfc",
+        "#22c663",
+        "#2e2e2e",
+        "#000000",
+        "#96bf0d",
+        "#366c4c"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.8.1",
+    "siteFonts": [
+      {
+        "css": "'Roboto Slab', serif",
+        "name": "Roboto Slab",
+        "url": "https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700"
+      },
+      {
+        "css": "'Poppins', sans-serif",
+        "name": "Poppins",
+        "url": "https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      }
+    ],
+    "uniqCompNum": 63,
+    "versionPublish": "4.8.1",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Stopka (Podglądowe)",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Pełny ekran\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Kolor nakładki 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Prześwit\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Kolor ta\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Galeria\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\"></div>\n    </div>\n\n</section>",
+          "_cid": "r9iyNTR3U3",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Niesamowite",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/trening-280x280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/trening-280x280-280x280.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Tutaj wstaw opis",
+                "active": false
+              },
+              {
+                "tags": "Niesamowite",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/zdrowie-280x280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/zdrowie-280x280-280x280.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Tutaj wstaw opis",
+                "active": false
+              },
+              {
+                "tags": "Wrażliwe",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/odchudzanie-280x280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/odchudzanie-280x280-280x280.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Tutaj wstaw opis",
+                "active": false
+              },
+              {
+                "tags": "Wrażliwe",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/akcesoria-280x280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/akcesoria-280x280-280x280.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Tutaj wstaw opis",
+                "active": true
+              }
+            ]
+          },
+          "_anchor": "gallery1-1p"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Kolor tła\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">SUPLEMENTY WEGAŃSKIE</a>\n                    <a class=\"btn btn-warning\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">SPRAWDŹ!</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "r9izSPrRj9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content8-1q"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".testimonial-text": {
+              "font-style": "italic",
+              "font-weight": "300",
+              "color": "#465052"
+            },
+            ".mbr-author-name": {
+              "font-weight": "bold",
+              "color": "#96bf0d"
+            },
+            ".media-container-row": {
+              "word-wrap": "break-word",
+              "word-break": "break-word"
+            },
+            ".mbr-author-desc": {
+              "color": "#000000"
+            },
+            ".mbr-author-desc I": {
+              "color": "#465052"
+            }
+          },
+          "_name": "testimonials2",
+          "_customHTML": "<section class=\"testimonials2\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n      <input type=\"range\" inline title=\"Wielkość\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"35\">\n\n      <fieldset type=\"background\" name=\"bg\" parallax>\n          <input type=\"image\" title=\"Obrazek\" value=\"../_images/background3.jpg\">\n          <input type=\"color\" title=\"Kolor ta\" value=\"#ffffff\" selected>\n          <input type=\"video\" title=\"Film\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n      </fieldset>\n      <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n      <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n      <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters --> \n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure pr-lg-5\" mbr-style=\"{'width':mediaSize + '%'}\">\n              <a href=\"https://betteryou.pl/blog/cat/news/post/naturalne-bialko-roslinne/\"><img src=\"@PROJECT_PATH@/assets/images/224-art-havreprotein-choklad-vegan-1-295x295.jpg\" alt=\"Szczegóły o produkcie\" title></a>\n            </div>\n            <div class=\"media-content px-3 align-self-center mbr-white py-2\">\n                    <p class=\"mbr-text testimonial-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".testimonial-text\"><br>Firma <b>BETTERYOU</b> przedstawia jeden ze swoich flagowych produktów białkowych jakim jest <b>PROTEIN 85</b> który jest szwedzkim powiewem całkowicie nowej jakości na naszym rodzimym runku suplementów diety . <b>Czym jest PROTEIN 85</b>? Jest to mieszanka białek pochodzenia roślinnego w którym użyto jako główne surowce <b>białko grochu</b> oraz <b>białka owsa</b> które nawzajem się uzupełniają tworzą doskonały produkt proteinowy zarówno dla osób które potrzebują dowartościowania diety w białko jak sportowców wyczynowych gdzie ilość białka w diecie ma kluczowe znaczenie.<br></p>\n                    <p class=\"mbr-author-name pt-4 mb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-author-name\">PRODUKT FLAGOWY - NAJWYŻSZA PRZYSWAJALNOŚĆ BIAŁKA NA RYNKU</p>\n                    <p class=\"mbr-author-desc mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-author-desc\"><i>\n                       NATURALNE BIAŁKO ROŚLINNE 85% - GROCH i OWIES\n                    </i></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "r96Ip8iM95",
+          "_anchor": "testimonials2-1h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            },
+            ".mbr-gallery-item > div > span": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "gallery3",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Pełny ekran\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\" inline>\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#4f4943\">\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Kolor nakładki 2\" name=\"overlayColor2\" value=\"#2e2e2e\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Prześwit\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" inline>\n        <input type=\"color\" title=\"Kolor ta\" name=\"bgColor\" value=\"#96bf0d\">\n\n        <input type=\"gallery\" title=\"Galeria\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-show-text mbr-gallery-spacing=\"0\"></div>\n    </div>\n\n</section>",
+          "_cid": "r967H4K3v8",
+          "_anchor": "gallery3-14",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Niesamowite",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gor-ca-czekolada-z-bia-kiem-857x375.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gor-ca-czekolada-z-bia-kiem-857x375-800x350.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://betteryou.pl/blog/cat/przepisy/post/goraca-czekolada-z-bialkiem/\" class=\"text-white\">GORĄCA CZEKOLADA Z BIAŁKIEM</a>",
+                "active": true
+              },
+              {
+                "tags": "Niesamowite",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/pancake-bia-kowy-857x375.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/pancake-bia-kowy-857x375-800x350.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://betteryou.pl/blog/cat/przepisy/post/pancake-biakowy/\" class=\"text-white\">PANCAKE BIAŁKOWY</a>",
+                "active": false
+              },
+              {
+                "tags": "Wrażliwe",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/czekoladowe-kulki-857x375.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/czekoladowe-kulki-857x375-800x350.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://betteryou.pl/blog/cat/przepisy/post/czekoladowe-kulki/\" class=\"text-white\">CZEKOLADOWE KULKI</a>",
+                "active": false
+              },
+              {
+                "tags": "Animowane",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/protein-smoothie-857x375.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/protein-smoothie-857x375-800x350.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "<a href=\"https://betteryou.pl/blog/cat/przepisy/post/protein-smoothie/\" class=\"text-white\">PROTEIN SMOOTHIE</a>",
+                "active": false
+              }
+            ]
+          }
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#465052",
+              "text-align": "center"
+            },
+            ".btn": {
+              "margin": "0 0 .5rem 0"
+            },
+            "& when (@reverseContent)": {
+              ".content-row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            "H2": {
+              "color": "#96bf0d",
+              "text-align": "center"
+            }
+          },
+          "_name": "info1",
+          "_customHTML": "<section class=\"mbr-section info1\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Pokaż tytuł\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Pokaż podtytuł\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Pokaż przyciski\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Tekst po prawej\" name=\"reverseContent\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Obrazek\" value=\"../_images/img/04.jpg\">\n            <input type=\"color\" title=\"Kolor ta\" value=\"#f8f8f8\" selected>\n            <input type=\"video\" title=\"Film\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n        <input type=\"color\" name=\"color2\" title=\"Kolor 2\" value=\"#cebfaf\" condition=\"bg.type=='color' && gradientBg\">\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center content-row\">\n            <div class=\"media-container-column title col-12 col-lg-7 col-md-6\">\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-section-subtitle\">\n                    Zapoznaj się z autorskimi artykułami od specjalistów związanych z <b>BetterYou</b></h3>\n                <h2 mbr-if=\"showTitle\" class=\"align-left mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-7\"><span style=\"font-weight: normal;\">\n                    <a href=\"https://betteryou.pl/blog/kurkuma-doglebna-analiza-by-sebastian-pisano/\">NAJNOWSZY ARTYKUŁ: - KURKUMA - DOGŁĘBNA ANALIZA od SEBASTIAN PISANO&nbsp;</a></span></h2>\n            </div>\n            <div class=\"media-container-column col-12 col-lg-3 col-md-4\">\n                <div class=\"mbr-section-btn align-right py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">WIĘCEJ</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "r96m1yp9S5",
+          "_anchor": "info1-1a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".media-container-row .mbr-text": {
+              "color": "#96bf0d",
+              "text-align": "left"
+            },
+            ".media-container-row .mbr-text P": {
+              "color": "#000000"
+            },
+            "P": {
+              "color": "#465052",
+              "text-align": "left"
+            },
+            ".media-container-row .mbr-text B": {
+              "color": "#96bf0d"
+            }
+          },
+          "_name": "footer6",
+          "_customHTML": "<section group=\"Footers\" global once mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Efekt odsłaniania\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Obrazek\" value=\"@PROJECT_PATH@/assets/images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Kolor ta\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">O NASZYCH PRODUKTACH<br></p><p>Marka <b>BETTERYOU</b>&nbsp;została stworzona w celu zaspokojenia potrzeb konsumentów świadomych jakości. Mamy bogate doświadczenie w sklepach ze zdrową żywnością, a naszym celem jest oferowanie produktów zdrowotnych o najwyższej jakości. <b>BETTER YOU</b> jest perłą skandynawskich uczonych zajmujących się suplementami diety oraz dietetyką od ponad 25 lat.&nbsp;</p><p><span style=\"font-size: 1rem;\">Naszym punktem wyjścia jest to, że dzisiejsze potrzeby konsumentów prowadzą w kierunku pro-zdrowotnym. Pracujemy od całościowego podejścia odnowy biologicznej.&nbsp;</span><span style=\"font-size: 1rem;\">Oceniamy i rozwijamy produkty, które odpowiadają potrzebom dzisiejszych </span><b style=\"font-size: 1rem;\">sportowców</b><span style=\"font-size: 1rem;\">, </span><b style=\"font-size: 1rem;\">kulturystów</b><span style=\"font-size: 1rem;\"> czy </span><b style=\"font-size: 1rem;\">trenujących kobiet </b><span style=\"font-size: 1rem;\">które są podstawą naszej działalności.</span><span style=\"font-size: 1rem;\"><br></span></p><p>[<a href=\"https://betteryou.pl/o-nas/\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\">C</a><a href=\"https://betteryou.pl/o-nas/\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\">z</a><a href=\"https://betteryou.pl/o-nas/\" style=\"font-size: 1rem; background-color: rgb(255, 255, 255);\">ytaj więcej</a><span style=\"font-size: 1rem;\">]</span></p><hr><p><b>Dlaczego warto dokonywać zakupy w</b> <b>BetterYou.pl</b>? Nasze produkty posiadają certyfikaty <b>HACCP</b> i <b>GMP</b>. Oferujemy tylko <b>bezpieczne</b> formy płatności oraz dostawy. Nasi zaufani dostawcy dostarczą Państwa przesyłkę <b>w ciągu 24h</b> od zakupu.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "footer6-v",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "r90e1PE0A0",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": true,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Kolor tła\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://betteryou.pl/bestsellers\" data-app-placeholder=\"Type Text\">NOWOŚCI</a> \n                    <a class=\"btn btn-warning\" href=\"https://betteryou.pl/promocje\" data-app-placeholder=\"Type Text\">PROMOCJE</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "r90aeZsrA6",
+          "_anchor": "content8-u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".form-text": {
+              "color": "#ffffff"
+            },
+            ".content": {
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "> div:not(:last-child)": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            ".input-group": {
+              "flex-wrap": "wrap",
+              "-webkit-flex-wrap": "wrap",
+              "justify-content": "center"
+            },
+            ".input-group-btn": {
+              "display": "inline-block",
+              "a.btn": {
+                "margin": "0 !important",
+                "color": "#fff"
+              }
+            },
+            ".img-logo": {
+              "img": {
+                "height": "6rem"
+              }
+            },
+            "[type=\"email\"]": {
+              "font-size": ".75rem",
+              "text-align": "center",
+              "min-width": "150px"
+            },
+            "[type=\"submit\"]": {
+              "padding": ".75rem 1.5625rem !important",
+              "margin-left": ".625rem",
+              "text-transform": "none",
+              "text-align": "center"
+            },
+            ".copyright": {
+              ".mbr-text": {
+                "color": "#767676"
+              }
+            },
+            ".footer-lower": {
+              ".copyright": {
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "1rem",
+                  "text-align": "center"
+                }
+              },
+              "hr": {
+                "margin": "1rem 0",
+                "border-color": "#000",
+                "opacity": ".05"
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                "-webkit-justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.3rem",
+                  "color": "#232323"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "justify-content": "center",
+                  "-webkit-justify-content": "center"
+                }
+              }
+            },
+            "form .input-group input.form-control, form .input-group-btn .btn": {
+              "border-top-right-radius": "3px",
+              "border-bottom-right-radius": "3px",
+              "border-top-left-radius": "3px",
+              "border-bottom-left-radius": "3px"
+            },
+            ".form-inline": {
+              "justify-content": "center"
+            },
+            ".form-group": {
+              "margin": "0"
+            },
+            "@media (max-width: 767px)": {
+              ".foot-logo": {
+                "text-align": "center !important"
+              },
+              ".foot-title": {
+                "text-align": "center !important"
+              },
+              ".mbr-text": {
+                "text-align": "center !important"
+              }
+            },
+            ".foot-title": {
+              "color": "#f9f295"
+            },
+            ".copyright .mbr-text": {
+              "color": "#f9f295"
+            },
+            ".mbr-links-column": {
+              "color": "#ffffff"
+            },
+            ".foot-logo": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "footer3",
+          "_customHTML": "<section class=\"footer3\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Pokaż prawa autorskie\" name=\"showCopyright\" checked>\n        <select title=\"Ikony\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected>5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Efekt odsłaniania\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Obrazek\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Kolor ta\" value=\"#96bf0d\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content\">\n            <div class=\"col-md-2 col-sm-4\">\n                <div class=\"mb-3 img-logo\">\n                    <a href=\"https://allegro.pl/uzytkownik/-BetterYou-?order=m\">\n                         <img src=\"@PROJECT_PATH@/assets/images/d58afa02da764b2f5acffd30fd533b44-icon-kopia-192x192.png\" alt=\"Mobirise\" title>\n                    </a>\n                </div>\n                <p mbr-theme-style=\"display-7\" class=\"mbr-fonts-style foot-logo\" data-app-selector=\".foot-logo\">Sklep BetterYou<br>ul. Sucha 4B<br>41-200 Sosnowiec</p>\n            </div>\n            <div class=\"col-md-3 col-sm-4\">\n                <p class=\"mb-4 mbr-fonts-style foot-title\" mbr-theme-style=\"display-7\" data-app-selector=\".foot-title\">\n                    WARTO TO WIEDZIEĆ</p>\n                <p class=\"mbr-text mbr-links-column mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-links-column\">FAQ - Pytania i pomoc<br><a href=\"https://betteryou.pl/o-nas/\" class=\"text-white\">BetterYou.pl - O nas</a><br><a href=\"https://betteryou.pl/regulamin/\" class=\"text-white\">Regulamin</a><br><a href=\"https://betteryou.pl/polityka-prywartnosci/\" class=\"text-white\">Polityka prywatności</a><br><a href=\"https://betteryou.pl/contacts/\" class=\"text-white\">BOK - Kontakt</a></p>\n            </div>\n            <div class=\"col-md-3 col-sm-4\">\n                <p class=\"mb-4 mbr-fonts-style foot-title\" mbr-theme-style=\"display-7\" data-app-selector=\".foot-title\">POMOC I DOSTAWA<br></p>\n                <p class=\"mbr-text mbr-fonts-style mbr-links-column\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-links-column\"><a href=\"https://betteryou.pl/metody-platnosci/\" class=\"text-white\">Metody płatności</a><br><a href=\"https://betteryou.pl/wysylka-dostawa/\" class=\"text-white\">Wysyłka i dostawa</a><br><a href=\"https://betteryou.pl/reklamacje-zwroty/\" class=\"text-white\">Reklamacje i zwroty</a><br>Współpraca PR / Blogerzy<br><a href=\"https://betteryou.pl/sales/guest/form/\" class=\"text-white\">Sprawdź status zamówienia</a></p>\n            </div>\n            <div class=\"col-md-4 col-sm-12\">\n                <p class=\"mb-4 mbr-fonts-style foot-title\" mbr-theme-style=\"display-7\" data-app-selector=\".foot-title\">\n                    NEWSLETTER</p>\n                <p class=\"mbr-text form-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".form-text\">\n                    Zapisz się do naszego newslettera i otrzymaj kod rabatowy -10% na zakupy powyżej 200 zł\n                </p>\n                <div mbr-form class=\"media-container-column\">\n                    <div data-form-alert hidden class=\"align-center\">Dziękujemy za zapisanie się do naszego newsletter'a.</div>\n\n                    <form class=\"form-inline\" action=\"kontakt@betteryou.pl\" method=\"post\" name=\"Mobirise Form\">\n                        <input type=\"hidden\" value data-form-email=\"true\">\n                        <div class=\"form-group\">\n                            <input type=\"email\" class=\"form-control input-sm input-inverse my-2\" name=\"email\" required data-form-field=\"Email\" placeholder=\"Wpisz swój adres @\">\n                        </div>\n                        <div class=\"input-group-btn m-2\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a href class=\"btn btn-warning\" type=\"submit\" role=\"button\" data-app-placeholder=\"Type Text\"></a></div>\n                    </form>\n                </div>\n\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright .mbr-text\">Copyright © 2013 - 2018 BetterYou. Wszelkie prawa zastrzeżone.</p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://www.instagram.com/betteryou.pl/\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-instagram socicon\" style=\"color: rgb(35, 35, 35);\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.facebook.com/betteryoupolska/\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\" style=\"color: rgb(35, 35, 35);\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/c/betteryoupolska\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-youtube socicon\" style=\"color: rgb(35, 35, 35);\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://twitter.com/betteryoupolska\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\" style=\"color: rgb(35, 35, 35);\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/u/0/+BetterYou\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-googleplus socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "r90pycGROU",
+          "_anchor": "footer3-z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(@bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".carousel-control": {
+              "background": "#000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".carousel-item": {
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              ".media-container-row": {
+                "-webkit-flex-grow": "1",
+                "flex-grow": "1"
+              },
+              ".wrap-img": {
+                "text-align": "center",
+                "img": {
+                  "max-height": "150px",
+                  "width": "auto",
+                  "max-width": "100%"
+                }
+              }
+            },
+            ".carousel-controls": {
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              ".carousel-control": {
+                "background": "#000",
+                "border-radius": "50%",
+                "position": "static",
+                "width": "40px",
+                "height": "40px",
+                "margin-top": "2rem",
+                "border-width": "1px",
+                "&.carousel-control-prev": {
+                  "left": "auto",
+                  "margin-right": "20px",
+                  "margin-left": "0"
+                },
+                "&.carousel-control-next": {
+                  "right": "auto",
+                  "margin-right": "0"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "1rem"
+                }
+              }
+            },
+            ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4, .cloneditem-5": {
+              "display": "none"
+            },
+            ".col-lg-15": {
+              "-webkit-box-flex": "0",
+              "-ms-flex": "0 0 100%",
+              "-webkit-flex": "0 0 100%",
+              "flex": "0 0 100%",
+              "max-width": "100%",
+              "position": "relative",
+              "min-height": "1px",
+              "padding-right": "10px",
+              "padding-left": "10px",
+              "width": "100%"
+            },
+            "@media (min-width: 992px)": {
+              ".col-lg-15": {
+                "-ms-flex": "0 0 20%",
+                "-webkit-flex": "0 0 20%",
+                "flex": "0 0 20%",
+                "max-width": "20%",
+                "width": "20%"
+              },
+              ".carousel-inner": {
+                "&.slides2": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(50%, 0, 0)",
+                    "transform": "translate3d(50%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-50%, 0, 0)",
+                    "transform": "translate3d(-50%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
+                    "display": "block"
+                  }
+                },
+                "&.slides3": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(33.333333%, 0, 0)",
+                    "transform": "translate3d(33.333333%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-33.333333%, 0, 0)",
+                    "transform": "translate3d(-33.333333%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
+                    "display": "block"
+                  }
+                },
+                "&.slides4": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(25%, 0, 0)",
+                    "transform": "translate3d(25%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-25%, 0, 0)",
+                    "transform": "translate3d(-25%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3": {
+                    "display": "block"
+                  }
+                },
+                "&.slides5": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(20%, 0, 0)",
+                    "transform": "translate3d(20%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-20%, 0, 0)",
+                    "transform": "translate3d(-20%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4": {
+                    "display": "block"
+                  }
+                },
+                "&.slides6": {
+                  "> .carousel-item.active.carousel-item-right, > .carousel-item.carousel-item-next": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(16.666667%, 0, 0)",
+                    "transform": "translate3d(16.666667%, 0, 0)"
+                  },
+                  "> .carousel-item.active.carousel-item-left, > .carousel-item.carousel-item-prev": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(-16.666667%, 0, 0)",
+                    "transform": "translate3d(-16.666667%, 0, 0)"
+                  },
+                  "> .carousel-item.carousel-item-left, > .carousel-item.carousel-item-prev.carousel-item-right, > .carousel-item.active": {
+                    "left": "0",
+                    "-webkit-transform": "translate3d(0, 0, 0)",
+                    "transform": "translate3d(0, 0, 0)"
+                  },
+                  ".cloneditem-1, .cloneditem-2, .cloneditem-3, .cloneditem-4, .cloneditem-5": {
+                    "display": "block"
+                  }
+                }
+              }
+            }
+          },
+          "_name": "clients",
+          "_customHTML": "<section class=\"clients\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"BootstrapCarouselSwipe,mbr-clients-slider\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Góra\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Dół\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Pokaż tytuł\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Pokaż podtytuł\" name=\"showSubtitle\">\n        <input type=\"range\" inline title=\"Wizytówki\" name=\"slidesCount\" min=\"1\" max=\"20\" step=\"1\" value=\"7\">\n        <select title=\"Widoczne\" name=\"visibleSlides\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Obrazek\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Kolor ta\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Film\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Tło z gradientem\" name=\"gradientBg\" condition=\"bg.type=='color'\">\n        <input type=\"color\" title=\"Kolor 2\" name=\"color2\" value=\"#efefef\" condition=\"gradientBg &&bg.type=='color'\">\n\n        <input type=\"checkbox\" title=\"Nakładka\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Kolor nakładki\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Przejrzystość\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>  \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n        <div class=\"container mb-5\" mbr-if=\"showTitle||showSubtitle\">\n            <div class=\"media-container-row\">\n                <div class=\"col-12 align-center\">\n                    <h2 class=\"mbr-section-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n                        Nasi klienci\n                    </h2>\n                    <h3 class=\"mbr-section-subtitle mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showSubtitle\">\n                        Kliknij dowolny obrazek, aby go zmienić.  Kliknij ikonę niebieskiej \"zębatki\" w prawym, górnym rogu, aby zmienić tło, ilość slajdów oraz ilość widocznych jednocześnie obiektów.\n                    </h3>\n                </div>\n            </div>\n        </div>\n\n    <div class=\"container\">\n        <div class=\"carousel slide\" data-ride=\"carousel\" role=\"listbox\">\n            <div class=\"carousel-inner\" mbr-list mbr-list-grow=\"slidesCount\" data-visible=\"{{visibleSlides}}\">\n                <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/logotyp-mastercard-visa-499x496.png\" class=\"img-responsive clients-img\" alt title>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                \n                \n                \n                \n            <div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/825520.svg\" class=\"img-responsive clients-img\" alt title>\n                            </div>\n                        </div>\n                    </div>\n                </div><div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/gmp-quality-logo-029eae8b9b-seeklogo.com-300x300.png\" class=\"img-responsive clients-img\" alt title>\n                            </div>\n                        </div>\n                    </div>\n                </div><div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/240-f-80182689-xgks51gwrypvm1jxk52zgbehxofcvp2i-240x240.jpg\" class=\"img-responsive clients-img\" alt title>\n                            </div>\n                        </div>\n                    </div>\n                </div><div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/600px-pl-400x400-400x400.png\" class=\"img-responsive clients-img\" alt title>\n                            </div>\n                        </div>\n                    </div>\n                </div><div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/240-f-178735696-rfdwk1tbx7uyu9zuflfpexoysnrsvwbc-240x240.jpg\" class=\"img-responsive clients-img\" alt title>\n                            </div>\n                        </div>\n                    </div>\n                </div><div class=\"carousel-item \">\n                    <div class=\"media-container-row\">\n                        <div class=\"col-md-12\">\n                            <div class=\"wrap-img \">\n                                <img src=\"@PROJECT_PATH@/assets/images/240-f-171016739-ceop4eteaq3bnmo637nqhfkosoceh2za-240x240.jpg\" class=\"img-responsive clients-img\" alt title>\n                            </div>\n                        </div>\n                    </div>\n                </div></div>\n            <div class=\"carousel-controls\">\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-prev\" role=\"button\" data-slide=\"prev\">\n                    <span aria-hidden=\"true\" class=\"mbri-left mbr-iconfont\"></span>\n                    <span class=\"sr-only\">Poprzednie</span>\n                </a>\n                <a data-app-prevent-settings class=\"carousel-control carousel-control-next\" role=\"button\" data-slide=\"next\">\n                    <span aria-hidden=\"true\" class=\"mbri-right mbr-iconfont\"></span>\n                    <span class=\"sr-only\">Następne</span>\n                </a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "clients-s",
+          "_isUserblock": true,
+          "_sourceTheme": "mobirise4",
+          "_cid": "r903yS0ac9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
